@@ -23,22 +23,22 @@
 &kp ESCAPE    &kp Q           &kp D           &kp R             &kp W               &kp B        &kp J        &kp F                &kp U              &kp P            &kp SEMICOLON    &kp BACKSLASH
 &kp CAPSLOCK  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G        &kp Y        &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT O  &mt RIGHT_GUI I  &kp APOSTROPHE
 &kp INSERT    &kp Z           &kp X           &kp M             &kp C               &kp V        &kp K        &kp L                &kp COMMA          &kp DOT          &kp SLASH        &kp DELETE
-                                              &lt 1 LEFT_GUI    &kp SPACE           &lt 1 TAB    &lt 1 ENTER  &lt 1 BACKSPACE
+                                              &lt 2 LEFT_GUI    &lt 1 SPACE         &lt 3 TAB    &lt 3 ENTER  &lt 1 BACKSPACE
             >;
         };
 
-        Lower {
-            label = "Lower";
+        Numbers {
+            label = "Numbers";
             bindings = <
-&trans        &trans    &kp UP    &trans     &trans     &trans      &kp N7     &kp N8   &kp N9  &kp N0   &kp HOME  &kp F1
-&trans        &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans      &kp N4     &kp N5   &kp N6  &none    &trans    &kp F10
-&kp LEFT_ALT  &trans    &trans    &trans     &kp MINUS  &kp PLUS    &kp N1     &kp N2   &kp N3  &kp DOT  &trans    &kp F20
-                                  &kp LGUI   &kp SPACE  &trans      &kp RCTRL  &kp RET
+&kp GRAVE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
+&trans     &trans           &trans           &trans           &trans           &trans             &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans
+&trans     &trans           &trans           &trans           &trans           &trans             &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
+                                             &trans           &trans           &trans             &trans           &trans
             >;
         };
 
-        Raise {
-            label = "Raise";
+        Symbols {
+            label = "Symbols";
             bindings = <
 &trans  &kp EXCL      &kp AT       &kp HASH    &kp DLLR   &kp PRCNT       &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
 &trans  &bt BT_CLR    &bt BT_PRV   &bt BT_NXT  &trans     &to 3           &kp UNDER  &kp EQUAL    &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
@@ -47,8 +47,8 @@
             >;
         };
 
-        Game {
-            label = "Game";
+        Navigation {
+            label = "Navigation";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &sl 4           &trans    &trans  &trans  &trans  &trans  &trans
