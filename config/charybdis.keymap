@@ -20,7 +20,7 @@
         WORKMAN {
             label = "Base";
             bindings = <
-&kp ESCAPE      &kp Q           &kp D           &kp R             &kp W               &kp B        &kp J        &kp F                &kp U              &kp P            &kp SEMICOLON    &kp BACKSLASH
+&kp ESCAPE      &kp Q           &kp D           &kp R             &kp W               &kp B        &kp J        &kp F                &kp U              &kp P            &kp SEMICOLON    &lt 8 BACKSLASH
 &lt 2 CAPSLOCK  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G        &kp Y        &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT O  &mt RIGHT_GUI I  &kp APOSTROPHE
 &tog 5          &lt 2 Z         &lt 2 X         &lt 3 M           &lt 4 C             &lt 6 V      &lt 6 K      &lt 4 L              &lt 3 COMMA        &lt 2 DOT        &lt 2 SLASH      &kp DELETE
                                                 &lt 3 LEFT_GUI    &lt 2 SPACE         &lt 5 TAB    &lt 3 ENTER  &lt 2 BACKSPACE
@@ -30,7 +30,7 @@
         QWERTY {
             label = "Base2";
             bindings = <
-&kp ESCAPE      &kp Q           &kp D           &kp R             &kp W               &kp B        &kp J        &kp F                &kp U              &kp P            &kp SEMICOLON    &kp BACKSLASH
+&kp ESCAPE      &kp Q           &kp D           &kp R             &kp W               &kp B        &kp J        &kp F                &kp U              &kp P            &kp SEMICOLON    &lt 8 BACKSLASH
 &lt 2 CAPSLOCK  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G        &kp Y        &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT O  &mt RIGHT_GUI I  &kp APOSTROPHE
 &tog 5          &lt 2 Z         &lt 2 X         &lt 3 M           &lt 4 C             &lt 6 V      &lt 6 K      &lt 4 L              &lt 3 COMMA        &lt 2 DOT        &lt 2 SLASH      &kp DELETE
                                                 &lt 3 LEFT_GUI    &lt 2 SPACE         &lt 5 TAB    &lt 3 ENTER  &lt 2 BACKSPACE
@@ -78,28 +78,28 @@
 
         Bluetooth {
             bindings = <
-&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none    &none       &none       &none           &none       &none  &none
-&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none    &bt BT_PRV  &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_NXT  &none  &none
-&none          &none          &none          &none          &none          &none    &none       &none       &none           &none       &none  &none
-                                             &none          &none          &none    &none       &none
+&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_NXT    &bt BT_CLR      &none  &none  &none  &none  &none
+&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_PRV    &bt BT_CLR_ALL  &none  &none  &none  &none  &none
+&none          &none          &none          &none          &none          &none         &none           &none  &none  &none  &none  &none
+                                             &none          &none          &none         &none           &none
             >;
         };
 
         Settings {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none       &none        &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &sys_reset  &bootloader  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none       &none        &none  &none  &none
+                     &none  &none  &none    &none  &none
             >;
         };
 
         SWAP {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &mo 6  &mo 7  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none
             >;
         };
     };
