@@ -20,8 +20,8 @@
             bindings = <
 &kp ESCAPE    &kp Q           &kp D           &kp R             &kp W               &kp B        &kp J        &kp F                &kp U              &kp P            &kp SEMICOLON    &kp BACKSLASH
 &kp CAPSLOCK  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G        &kp Y        &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT O  &mt RIGHT_GUI I  &kp APOSTROPHE
-&kp INSERT    &kp Z           &kp X           &kp M             &kp C               &kp V        &kp K        &kp L                &kp COMMA          &kp DOT          &kp SLASH        &kp DELETE
-                                              &lt 2 LEFT_GUI    &lt 1 SPACE         &lt 3 TAB    &lt 3 ENTER  &lt 1 BACKSPACE
+&tog 4        &lt 1 Z         &kp X           &kp M             &lt 3 C             &lt 5 V      &lt 5 K      &lt 3 L              &kp COMMA          &kp DOT          &lt 1 SLASH      &kp DELETE
+                                              &lt 2 LEFT_GUI    &lt 1 SPACE         &lt 4 TAB    &lt 2 ENTER  &lt 1 BACKSPACE
             >;
         };
 
@@ -29,8 +29,8 @@
             label = "Numbers";
             bindings = <
 &kp GRAVE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
-&trans     &trans           &trans           &trans           &trans           &trans             &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans
-&trans     &trans           &trans           &trans           &trans           &trans             &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
+&trans     &trans           &trans           &trans           &trans           &trans             &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &trans
+&trans     &trans           &trans           &trans           &trans           &trans             &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS      &trans
                                              &trans           &trans           &trans             &trans           &trans
             >;
         };
@@ -38,8 +38,8 @@
         Symbols {
             label = "Symbols";
             bindings = <
-&kp TILDE  &kp EXCL        &kp AT        &kp HASH  &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS          &kp ASTERISK       &kp LPAR        &kp RPAR          &kp PIPE
-&trans     &kp UNDERSCORE  &kp KP_MINUS  &kp PLUS  &kp KP_EQUAL  &trans       &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp DOUBLE_QUOTES
+&kp GRAVE  &kp EXCL        &kp AT        &kp HASH  &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS          &kp ASTERISK       &kp LPAR        &kp RPAR          &kp PIPE
+&kp TILDE  &kp UNDERSCORE  &kp KP_MINUS  &kp PLUS  &kp KP_EQUAL  &trans       &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp DOUBLE_QUOTES
 &trans     &trans          &trans        &trans    &trans        &trans       &trans     &trans            &trans             &kp LESS_THAN   &kp GREATER_THAN  &trans
                                          &trans    &trans        &trans       &trans     &trans
             >;
@@ -57,10 +57,10 @@
 
         Navigation {
             bindings = <
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &mkp LCLK
-                           &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans          &trans          &trans        &trans           &trans      &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp INSERT  &trans
+&tog 4  &trans  &trans  &trans    &trans    &trans      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp DELETE  &trans
+                        &mkp MB1  &mkp MB3  &mkp MB2    &trans          &trans
             >;
         };
 
